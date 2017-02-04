@@ -1,0 +1,5 @@
+#Lambda Function Project Metadata
+#Sat Feb 04 00:05:05 EST 2017
+lastDeploymentFunctionName=SaintColumbanFunction
+lastDeploymentBucketName=lambda-function-bucket-us-east-1-1486176755721
+lastDeploymentEndpoint=https\://lambda.us-east-1.amazonaws.com/

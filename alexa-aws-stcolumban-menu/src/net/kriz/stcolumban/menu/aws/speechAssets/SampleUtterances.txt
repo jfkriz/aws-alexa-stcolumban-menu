@@ -1,0 +1,26 @@
+GetMenuIntent what is on the lunch menu
+GetMenuIntent what's on the lunch menu
+GetMenuIntent what is on the lunch menu {today|MenuDate}
+GetMenuIntent what is on the lunch menu {next week|MenuDate}
+GetMenuIntent what is on the lunch menu {on February fourteenth|MenuDate}
+GetMenuIntent what's on the lunch menu {today|MenuDate}
+GetMenuIntent what's on the lunch menu {next week|MenuDate}
+GetMenuIntent what's on the lunch menu {on February fourteenth|MenuDate}
+
+GetMenuIntent what is on the menu
+GetMenuIntent what's on the menu
+GetMenuIntent what is on the menu {today|MenuDate}
+GetMenuIntent what is on the menu {next week|MenuDate}
+GetMenuIntent what is on the menu {on February fourteenth|MenuDate}
+GetMenuIntent what's on the menu {today|MenuDate}
+GetMenuIntent what's on the menu {next week|MenuDate}
+GetMenuIntent what's on the menu {on February fourteenth|MenuDate}
+
+GetMenuIntent what is for lunch
+GetMenuIntent what's for lunch
+GetMenuIntent what is for lunch {today|MenuDate}
+GetMenuIntent what is for lunch {next week|MenuDate}
+GetMenuIntent what is for lunch {on February fourteenth|MenuDate}
+GetMenuIntent what's for lunch {today|MenuDate}
+GetMenuIntent what's for lunch {next week|MenuDate}
+GetMenuIntent what's for lunch {on February fourteenth|MenuDate}
