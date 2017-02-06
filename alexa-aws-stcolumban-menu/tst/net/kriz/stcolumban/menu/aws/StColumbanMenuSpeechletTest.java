@@ -14,7 +14,6 @@ import com.amazon.speech.slu.Slot;
 import com.amazon.speech.speechlet.Context;
 import com.amazon.speech.speechlet.IntentRequest;
 import com.amazon.speech.speechlet.SpeechletResponse;
-import com.amazonaws.services.inspector.model.Locale;
 
 public class StColumbanMenuSpeechletTest {
 	private StColumbanMenuSpeechlet fixture;

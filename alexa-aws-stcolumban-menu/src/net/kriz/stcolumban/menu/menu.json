@@ -87,12 +87,12 @@
 		{
 			"id": "cookie1",
 			"type": "treat",
-			"description": "Fortune Cookie"
+			"description": "a Fortune Cookie"
 		},
 		{
 			"id": "cookie2",
 			"type": "treat",
-			"description": "Valentine's Day Cookie"
+			"description": "a Valentine's Day Cookie"
 		},
 		{
 			"id": "jello1",
@@ -102,12 +102,12 @@
 		{
 			"id": "irishsurprise",
 			"type": "treat",
-			"description": "St. Patrick's Day Surprise"
+			"description": "a St. Patrick's Day Surprise"
 		},
 		{
 			"id": "cookie3",
 			"type": "treat",
-			"description": "March Madness Cookie"
+			"description": "a March Madness Cookie"
 		},
 		{
 			"id": "popcorn1",
