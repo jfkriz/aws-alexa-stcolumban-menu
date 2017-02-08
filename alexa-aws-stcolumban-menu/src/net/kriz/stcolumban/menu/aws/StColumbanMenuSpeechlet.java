@@ -19,6 +19,8 @@ import com.amazon.speech.ui.PlainTextOutputSpeech;
 import com.joestelmach.natty.DateGroup;
 import com.joestelmach.natty.Parser;
 
+import net.kriz.stcolumban.dailyverse.DailyBibleVerseService;
+import net.kriz.stcolumban.dailyverse.DailyBibleVerseServiceImpl;
 import net.kriz.stcolumban.menu.DailyMenu;
 import net.kriz.stcolumban.menu.JsonMenuReader;
 import net.kriz.stcolumban.menu.MenuReaderInterface;
@@ -29,6 +31,7 @@ import net.kriz.stcolumban.menu.PdfMenuReader;
 public class StColumbanMenuSpeechlet implements SpeechletV2 {
 	private MenuReaderInterface menuReader;
 	private OutputUtteranceServiceInterface outputUtteranceService;
+	private DailyBibleVerseService dailyBibleVerseService;
 
 	public StColumbanMenuSpeechlet() {
 		String menuType = System.getenv("MenuType");
@@ -53,6 +56,12 @@ public class StColumbanMenuSpeechlet implements SpeechletV2 {
 			outputJsonUrl = "https://s3.amazonaws.com/lambda-function-bucket-us-east-1-1486176755721/SaintColumban/dailyMenuOutputUtterances.json";
 		}
 		outputUtteranceService = new OutputUtteranceServiceImpl(outputJsonUrl);
+		
+		String dailyBibleVerseUrl = System.getenv("DailyBibleVerseUrl");
+		if(StringUtils.isEmpty(dailyBibleVerseUrl)) {
+			dailyBibleVerseUrl = "https://www.biblegateway.com/votd/get/?format=json&version=NIV";
+		}
+		dailyBibleVerseService = new DailyBibleVerseServiceImpl(dailyBibleVerseUrl);
 	}
 
 	@Override
@@ -70,9 +79,19 @@ public class StColumbanMenuSpeechlet implements SpeechletV2 {
 
 		if ("GetMenuIntent".equalsIgnoreCase(intentName)) {
 			return doGetMenuIntent(requestEnvelope);
+		} else if("GetDailyBibleVerseIntent".equalsIgnoreCase(intentName)) {
+			return doGetDailyBibleVerseIntent();
 		}
 
 		return doHelp();
+	}
+
+	private SpeechletResponse doGetDailyBibleVerseIntent() {
+		PlainTextOutputSpeech output = new PlainTextOutputSpeech();
+		
+		output.setText(dailyBibleVerseService.getDailyBibleVerse());
+
+		return SpeechletResponse.newTellResponse(output);
 	}
 
 	private SpeechletResponse doHelp() {

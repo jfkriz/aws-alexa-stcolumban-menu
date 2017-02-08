@@ -24,3 +24,14 @@ GetMenuIntent what is for lunch {on February fourteenth|MenuDate}
 GetMenuIntent what's for lunch {today|MenuDate}
 GetMenuIntent what's for lunch {next week|MenuDate}
 GetMenuIntent what's for lunch {on February fourteenth|MenuDate}
+
+GetDailyBibleVerseIntent what is today's bible verse
+GetDailyBibleVerseIntent what is the bible verse today
+GetDailyBibleVerseIntent what's today's bible verse
+GetDailyBibleVerseIntent what's the bible verse today
+GetDailyBibleVerseIntent for today's bible verse
+GetDailyBibleVerseIntent for the bible verse today
+GetDailyBibleVerseIntent for the daily bible verse
+GetDailyBibleVerseIntent for the bible verse
+GetDailyBibleVerseIntent for a bible verse
+
