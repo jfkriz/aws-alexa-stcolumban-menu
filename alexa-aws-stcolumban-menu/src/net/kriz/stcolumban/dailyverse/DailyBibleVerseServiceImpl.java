@@ -8,7 +8,7 @@ import java.net.URL;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class DailyBibleVerseServiceImpl implements DailyBibleVerseService {
+public class DailyBibleVerseServiceImpl implements DailyBibleVerseServiceInterface {
 	private String bibleVerseUrl;
 
 	public DailyBibleVerseServiceImpl(String bibleVerseUrl) {

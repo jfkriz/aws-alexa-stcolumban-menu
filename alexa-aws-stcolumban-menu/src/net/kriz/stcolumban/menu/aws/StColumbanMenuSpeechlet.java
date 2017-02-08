@@ -19,7 +19,7 @@ import com.amazon.speech.ui.PlainTextOutputSpeech;
 import com.joestelmach.natty.DateGroup;
 import com.joestelmach.natty.Parser;
 
-import net.kriz.stcolumban.dailyverse.DailyBibleVerseService;
+import net.kriz.stcolumban.dailyverse.DailyBibleVerseServiceInterface;
 import net.kriz.stcolumban.dailyverse.DailyBibleVerseServiceImpl;
 import net.kriz.stcolumban.menu.DailyMenu;
 import net.kriz.stcolumban.menu.JsonMenuReader;
@@ -31,7 +31,7 @@ import net.kriz.stcolumban.menu.PdfMenuReader;
 public class StColumbanMenuSpeechlet implements SpeechletV2 {
 	private MenuReaderInterface menuReader;
 	private OutputUtteranceServiceInterface outputUtteranceService;
-	private DailyBibleVerseService dailyBibleVerseService;
+	private DailyBibleVerseServiceInterface dailyBibleVerseService;
 
 	public StColumbanMenuSpeechlet() {
 		String menuType = System.getenv("MenuType");
