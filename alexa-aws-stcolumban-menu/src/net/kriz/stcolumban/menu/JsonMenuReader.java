@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
@@ -46,17 +47,27 @@ public class JsonMenuReader implements MenuReaderInterface {
 		}
 	}
 
-	private static MenuItem findItem(String id, List<MenuItem> items) {
+	private static MenuItems findItem(String id, List<MenuItem> items) {
 		if (StringUtils.isEmpty(id)) {
 			return null;
 		}
 
-		MenuItem find = new MenuItem();
-		find.setId(id);
+		List<MenuItem> found = new ArrayList<MenuItem>();
+		String [] ids = id.split(";");
+		for (String i : ids) {
+			MenuItem find = new MenuItem();
+			find.setId(i);
+			
+			int item = Collections.binarySearch(items, find, MENU_ITEM_COMPARATOR);
+			if(item >= 0) {
+				found.add(items.get(item));
+			}
+		}
 
-		int item = Collections.binarySearch(items, find, MENU_ITEM_COMPARATOR);
-		return item < 0 ? null : items.get(item);
-
+		MenuItems m = new MenuItems();
+		m.setItems(found);
+		
+		return found.size() > 0 ? m : null;
 	}
 
 	@Override

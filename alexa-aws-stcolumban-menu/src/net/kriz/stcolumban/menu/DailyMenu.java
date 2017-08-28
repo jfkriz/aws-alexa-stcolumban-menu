@@ -5,9 +5,9 @@ public class DailyMenu {
 	private String veggie;
 	private String treat;
 
-	private MenuItem entreeItem;
-	private MenuItem veggieItem;
-	private MenuItem treatItem;
+	private MenuItems entreeItem;
+	private MenuItems veggieItem;
+	private MenuItems treatItem;
 
 	public String getEntree() {
 		return entree;
@@ -33,27 +33,27 @@ public class DailyMenu {
 		this.treat = treat;
 	}
 
-	public MenuItem getEntreeItem() {
+	public MenuItems getEntreeItem() {
 		return entreeItem;
 	}
 
-	public void setEntreeItem(MenuItem entreeItem) {
+	public void setEntreeItem(MenuItems entreeItem) {
 		this.entreeItem = entreeItem;
 	}
 
-	public MenuItem getVeggieItem() {
+	public MenuItems getVeggieItem() {
 		return veggieItem;
 	}
 
-	public void setVeggieItem(MenuItem veggieItem) {
+	public void setVeggieItem(MenuItems veggieItem) {
 		this.veggieItem = veggieItem;
 	}
 
-	public MenuItem getTreatItem() {
+	public MenuItems getTreatItem() {
 		return treatItem;
 	}
 
-	public void setTreatItem(MenuItem treatItem) {
+	public void setTreatItem(MenuItems treatItem) {
 		this.treatItem = treatItem;
 	}
 
