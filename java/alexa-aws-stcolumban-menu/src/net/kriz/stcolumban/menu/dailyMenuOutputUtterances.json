@@ -1,0 +1,13 @@
+{
+	"noMenuFound": "Sorry, I couldn't find anything on the lunch menu for %1$s. Maybe you don't have school that day. Wouldn't that be great!",
+	"outputWithNoTreat": "Here's the lunch menu for %1$s. The entree is %2$s, and the veggie is %3$s. %4$s",
+	"outputWithTreat": "Here's the lunch menu for %1$s. The entree is %2$s, the veggie is %3$s, and the super-special treat of the day is %4$s! %5$s",
+	"randomQuotes": [
+		"So, the question you have to ask yourself is, 'Am I going to buy this, or am I going to eat the great lunch my Dad packs for me'?",
+		"So what's it gonna be?",
+		"I think a packed lunch sounds fabulous today, don't you?",
+		"So are you going to buy lunch or what?  I mean, you keep asking me about this, you'd think you'd just buy already!",
+		"So is it peanut-butter-jelly time yet?",
+		"Do you want to build a snowman?"
+	]
+}

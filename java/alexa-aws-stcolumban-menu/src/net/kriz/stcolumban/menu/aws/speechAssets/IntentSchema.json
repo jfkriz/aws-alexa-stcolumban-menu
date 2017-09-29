@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "intent": "GetMenuIntent",
+      "slots": [
+        {
+          "name" : "MenuDate",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "GetDailyBibleVerseIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

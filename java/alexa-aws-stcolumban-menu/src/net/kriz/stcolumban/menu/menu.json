@@ -1,0 +1,169 @@
+{
+	"entrees": [
+		{
+			"id": "nuggets",
+			"type": "entree",
+			"description": "Chicken Nuggets with Dipping Sauce, Whole Grain Dinner Roll, and Baked Beans"
+		},
+		{
+			"id": "tacobag",
+			"type": "entree",
+			"description": "Beef Taco in Bag with Brown Rice, Cheese, Salsa, and Refried Beans"
+		},
+		{
+			"id": "tanotenders",
+			"type": "entree",
+			"description": "Tano's Tenders and Whole Grain Dinner Roll"
+		},
+		{
+			"id": "corndogs",
+			"type": "entree",
+			"description": "Mini-Corn Dogs with Dipping Sauce"
+		},
+		{
+			"id": "cheeseconey",
+			"type": "entree",
+			"description": "Cheese Coney with Cincinnati Chili"
+		},
+		{
+			"id": "specialtypizza",
+			"type": "entree",
+			"description": "Specialty Pizza"
+		},
+		{
+			"id": "cheeseburger",
+			"type": "entree",
+			"description": "Cheeseburger and Baked Beans"
+		},
+		{
+			"id": "pastaandmeatsauce",
+			"type": "entree",
+			"description": "Pasta and Meat Sauce with Garlic Bread and Seasoned Black Beans"
+		},
+		{
+			"id": "hotdog",
+			"type": "entree",
+			"description": "Hot Dog, Hot Dog, Hot Diggity Dog"
+		},
+		{
+			"id": "frenchtoast",
+			"type": "entree",
+			"description": "French Toast & Sausage with Spuds"
+		},
+		{
+			"id": "grilledcheese",
+			"type": "entree",
+			"description": "Grilled Cheese with Tomato Soup"
+		},
+		{
+			"id": "pizzadippers",
+			"type": "entree",
+			"description": "Pizza Dippers with Marinara Sauce and Seasoned Pinto Beans"
+		},
+		{
+			"id": "macandcheese",
+			"type": "entree",
+			"description": "Macaroni and Cheese with a Dinner Roll and Baked Beans"
+		},
+		{
+			"id": "cheezybread",
+			"type": "entree",
+			"description": "Cheezy Bread with Marinara Sauce and Baked Beans"
+		},
+		{
+			"id": "calzone",
+			"type": "entree",
+			"description": "Calzone"
+		},
+		{
+			"id": "waffles",
+			"type": "entree",
+			"description": "Waffle & Sausage with Spuds"
+		}		
+	],
+	"veggies": [
+		{
+			"id": "broccoli",
+			"type": "veggie",
+			"description": "Broccoli"
+		},
+		{
+			"id": "corn",
+			"type": "veggie",
+			"description": "Corn"
+		},
+		{
+			"id": "greenbeans",
+			"type": "veggie",
+			"description": "Green Beans"
+		},
+		{
+			"id": "cookschoice",
+			"type": "veggie",
+			"description": "Cook's Choice"
+		},
+		{
+			"id": "peas",
+			"type": "veggie",
+			"description": "Peas"
+		}
+	],
+	"treats": [
+		{
+			"id": "cookie1",
+			"type": "treat",
+			"description": "Chocolate Chip Cookie"
+		},
+		{
+			"id": "fruitcrisp",
+			"type": "treat",
+			"description": "Fruit Crisp"
+		},
+		{
+			"id": "pudding1",
+			"type": "treat",
+			"description": "Vanilla Pudding"
+		},
+		{
+			"id": "pudding2",
+			"type": "treat",
+			"description": "Chocolate Pudding"
+		},
+		{
+			"id": "jello1",
+			"type": "treat",
+			"description": "Jello"
+		},
+		{
+			"id": "cookie2",
+			"type": "treat",
+			"description": "Red, White, and Blue Cookie"
+		}
+	],
+	"dates": {
+		"8/28/2017": { "entree": "cheeseburger", "veggie": "broccoli", "treat": "" },
+		"8/29/2017": { "entree": "pastaandmeatsauce", "veggie": "corn", "treat": "pudding1" },
+		"8/30/2017": { "entree": "tanotenders;hotdog", "veggie": "greenbeans", "treat": "" },
+		"8/31/2017": { "entree": "frenchtoast", "veggie": "cookschoice", "treat": "" },
+		"9/1/2017": { "entree": "specialtypizza", "veggie": "peas", "treat": "" },
+		"9/5/2017": { "entree": "grilledcheese", "veggie": "corn", "treat": "" },
+		"9/6/2017": { "entree": "tanotenders|pizzadippers", "veggie": "greenbeans", "treat": "" },
+		"9/7/2017": { "entree": "macandcheese", "veggie": "cookschoice", "treat": "jello1" },
+		"9/8/2017": { "entree": "specialtypizza", "veggie": "peas", "treat": "" },
+		"9/11/2017": { "entree": "hotdog", "veggie": "broccoli", "treat": "" },
+		"9/12/2017": { "entree": "cheesybread", "veggie": "corn", "treat": "cookie2" },
+		"9/13/2017": { "entree": "tanotenders;calzone", "veggie": "greenbeans", "treat": "" },
+		"9/14/2017": { "entree": "waffles", "veggie": "cookschoice", "treat": "" },
+		"9/15/2017": { "entree": "specialtypizza", "veggie": "peas", "treat": "" },
+		"9/18/2017": { "entree": "chickennuggets", "veggie": "broccoli", "treat": "" },
+		"9/19/2017": { "entree": "tacobag", "veggie": "corn", "treat": "fruitcrisp" },
+		"9/20/2017": { "entree": "tanotenders;corndogs", "veggie": "greenbeans", "treat": "" },
+		"9/21/2017": { "entree": "cheeseconey", "veggie": "cookschoice", "treat": "" },
+		"9/22/2017": { "entree": "specialtypizza", "veggie": "peas", "treat": "" },
+		"9/25/2017": { "entree": "cheeseburger", "veggie": "broccoli", "treat": "" },
+		"9/26/2017": { "entree": "pastaandmeatsauce", "veggie": "corn", "treat": "pudding2" },
+		"9/27/2017": { "entree": "tanotenders;hotdog", "veggie": "greenbeans", "treat": "" },
+		"9/28/2017": { "entree": "frenchtoast", "veggie": "cookschoice", "treat": "" },
+		"9/29/2017": { "entree": "specialtypizza", "veggie": "peas", "treat": "" }
+	}
+}

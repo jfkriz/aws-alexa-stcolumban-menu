@@ -1,0 +1,39 @@
+{
+  "name": "aws-alexa-stcolumban-menu",
+  "version": "1.0.0",
+  "description": "An Amazon Alexa skill to get today's menu selection for St. Columban school in Loveland, Ohio",
+  "main": "index.js",
+  "dependencies": {
+    "alexa-sdk": "^1.0.14",
+    "chrono-node": "^1.3.5",
+    "format4js": "^0.1.1",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-awslambda": "^0.5.0",
+    "gulp-install": "^1.1.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-mocha": "^4.3.1",
+    "gulp-shell": "^0.6.3",
+    "gulp-zip": "^4.0.0",
+    "jshint": "^2.9.5",
+    "mocha": "^3.5.0",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "main": "node test/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfkriz/aws-alexa-stcolumban-menu.git"
+  },
+  "author": "Jim Kriz",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/jfkriz/aws-alexa-stcolumban-menu/issues"
+  },
+  "homepage": "https://github.com/jfkriz/aws-alexa-stcolumban-menu#readme"
+}
