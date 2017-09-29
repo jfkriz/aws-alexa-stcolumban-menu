@@ -8,7 +8,6 @@ const HTTPS_PROTOCOL = 'https:';
 
 class HttpRequest {
     constructor(uri, method) {
-        console.log(`New HttpRequest for ${method} ${uri}`);
         const obj = url.parse(uri);
         this.protocol = obj.protocol;
         this.path = obj.path;
@@ -29,29 +28,25 @@ class HttpRequest {
     }
 
     send() {
-        console.log(`send()`);
         return new Promise((resolve, reject) => {
             const options = {
                 protocol : this.protocol,
                 host : this.host,
                 port : this.port,
+                path : this.path,
                 method : this.method,
                 headers : this._headers
             };
 
             const protocol = this.protocol === HTTPS_PROTOCOL ? https : http;
-            console.log(`Protocol: ${protocol}`);
-            console.log(`Options: ${JSON.stringify(options)}`);
-            protocol.request(options, (response) => {
+            var req = protocol.request(options, (response) => {
                 const chunks = [];
                 response.on('data', (chunk) => {
-                    console.log(`Got chunk: ${chunk}`);
                     chunks.push(chunk);
                 });
 
                 response.on('end', () => {
                     const responseStr = chunks.join('');
-                    console.log(`Got response: ${responseStr}`);
                     const responseObj = {
                         statusCode : response.statusCode,
                         statusText : response.statusText,
@@ -59,13 +54,15 @@ class HttpRequest {
                         headers : response.headers
                     };
 
-                    console.log('Invoking resolve');
                     resolve(responseObj);
                 });
-            }).on('error', (err) => {
-                console.log(`Got error [${err}], invoking reject`);
+            });
+            
+            req.on('error', (err) => {
                 reject(err);
             });
+
+            req.end();
         });
     }
 }

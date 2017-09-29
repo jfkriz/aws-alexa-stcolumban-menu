@@ -6,6 +6,7 @@ const aws_lambda = require('gulp-awslambda');
 const zip    = require('gulp-zip');
 const shell = require('gulp-shell');
 const rimraf = require('rimraf');
+const install = require('gulp-install');
 
 gulp.task('test', gulp_base.test);
 gulp.task('lint', gulp_base.lint);
@@ -17,10 +18,12 @@ gulp.task('-clean-dist', function(cb) {
 });
 
 gulp.task('-copy-dist', ['-clean-dist'], function() {
-    return gulp.src(['index.js', 'package.json', 'lib/**/**'], {base: './'}).pipe(gulp.dest('dist'));
+    return gulp.src(['index.js', 'package.json', 'lib/**/**'], {base: './'}).pipe(gulp.dest('./dist'));
 });
 
-gulp.task('-prep-dist', ['-copy-dist'], shell.task('npm i --prod', {cwd: './dist', verbose: true}));
+gulp.task('-prep-dist', ['-copy-dist'], function() {
+    return gulp.src('./dist/package.json').pipe(install({production: true}));
+});
 
 gulp.task('dist', ['-prep-dist'], function() {
     return gulp.src('dist/**/**', { nodir: true, dot: true })
