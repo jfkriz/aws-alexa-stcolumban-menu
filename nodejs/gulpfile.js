@@ -1,11 +1,11 @@
 'use strict';
 
-const gulp = require('gulp');
-const gulp_base = require('./gulpfile.base');
-const aws_lambda = require('gulp-awslambda');
-const zip = require('gulp-zip');
-const rimraf = require('rimraf');
-const install = require('gulp-install');
+var gulp = require('gulp');
+var gulp_base = require('./gulpfile.base');
+var aws_lambda = require('gulp-awslambda');
+var zip = require('gulp-zip');
+var rimraf = require('rimraf');
+var install = require('gulp-install');
 
 gulp.task('test', gulp_base.test);
 gulp.task('lint', gulp_base.lint);

@@ -1,14 +1,14 @@
 'use strict';
 
-const https = require('https');
-const http = require('http');
-const url = require('url');
+var https = require('https');
+var http = require('http');
+var url = require('url');
 
 const HTTPS_PROTOCOL = 'https:';
 
 class HttpRequest {
     constructor(uri, method) {
-        const obj = url.parse(uri);
+        var obj = url.parse(uri);
         this.protocol = obj.protocol;
         this.path = obj.path;
         this.port = obj.port || (obj.protocol === HTTPS_PROTOCOL ? 443 : 80);
@@ -29,7 +29,7 @@ class HttpRequest {
 
     send() {
         return new Promise((resolve, reject) => {
-            const options = {
+            var options = {
                 protocol : this.protocol,
                 host : this.host,
                 port : this.port,
@@ -38,16 +38,16 @@ class HttpRequest {
                 headers : this._headers
             };
 
-            const protocol = this.protocol === HTTPS_PROTOCOL ? https : http;
+            var protocol = this.protocol === HTTPS_PROTOCOL ? https : http;
             var req = protocol.request(options, (response) => {
-                const chunks = [];
+                var chunks = [];
                 response.on('data', (chunk) => {
                     chunks.push(chunk);
                 });
 
                 response.on('end', () => {
-                    const responseStr = chunks.join('');
-                    const responseObj = {
+                    var responseStr = chunks.join('');
+                    var responseObj = {
                         statusCode : response.statusCode,
                         statusText : response.statusText,
                         body : responseStr,
