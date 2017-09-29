@@ -11,5 +11,8 @@ describe('GetDailyBibleVerseIntent', () => {
 
     it('should get today\'s bible verse', () => {
         fixture();
+        setTimeout(() => {
+            console.log('done');
+        }, 5000);
     });
 });

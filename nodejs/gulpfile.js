@@ -23,7 +23,7 @@ gulp.task('-copy-dist', ['-clean-dist'], function() {
 gulp.task('-prep-dist', ['-copy-dist'], shell.task('npm i --prod', {cwd: './dist', verbose: true}));
 
 gulp.task('dist', ['-prep-dist'], function() {
-    return gulp.src('dist/**/**', { base:'dist' })
+    return gulp.src('dist/**/**', { nodir: true, dot: true })
         .pipe(zip('SaintColumbanv2.zip', {}))
         .pipe(aws_lambda('SaintColumbanV2', {}))
         .pipe(gulp.dest('.'));
