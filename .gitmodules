@@ -1,0 +1,3 @@
+[submodule "alexa-skills-kit-java"]
+ 	path = alexa-skills-kit-java
+ 	url = https://github.com/amzn/alexa-skills-kit-java
