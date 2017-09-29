@@ -31,7 +31,7 @@
     "url": "git+https://github.com/jfkriz/aws-alexa-stcolumban-menu.git"
   },
   "author": "Jim Kriz",
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/jfkriz/aws-alexa-stcolumban-menu/issues"
   },
