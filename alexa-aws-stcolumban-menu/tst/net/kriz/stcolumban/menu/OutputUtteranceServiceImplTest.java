@@ -1,7 +1,5 @@
 package net.kriz.stcolumban.menu;
 
-import static org.junit.Assert.*;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 
