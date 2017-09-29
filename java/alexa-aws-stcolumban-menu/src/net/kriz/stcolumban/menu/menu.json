@@ -138,12 +138,12 @@
 			"id": "cookie2",
 			"type": "treat",
 			"description": "Red, White, and Blue Cookie"
-		},
+		}
 	],
 	"dates": {
 		"8/28/2017": { "entree": "cheeseburger", "veggie": "broccoli", "treat": "" },
 		"8/29/2017": { "entree": "pastaandmeatsauce", "veggie": "corn", "treat": "pudding1" },
-		"8/30/2017": { "entree": "tanotenders|hotdog", "veggie": "greenbeans", "treat": "" },
+		"8/30/2017": { "entree": "tanotenders;hotdog", "veggie": "greenbeans", "treat": "" },
 		"8/31/2017": { "entree": "frenchtoast", "veggie": "cookschoice", "treat": "" },
 		"9/1/2017": { "entree": "specialtypizza", "veggie": "peas", "treat": "" },
 		"9/5/2017": { "entree": "grilledcheese", "veggie": "corn", "treat": "" },
@@ -152,17 +152,17 @@
 		"9/8/2017": { "entree": "specialtypizza", "veggie": "peas", "treat": "" },
 		"9/11/2017": { "entree": "hotdog", "veggie": "broccoli", "treat": "" },
 		"9/12/2017": { "entree": "cheesybread", "veggie": "corn", "treat": "cookie2" },
-		"9/13/2017": { "entree": "tanotenders|calzone", "veggie": "greenbeans", "treat": "" },
+		"9/13/2017": { "entree": "tanotenders;calzone", "veggie": "greenbeans", "treat": "" },
 		"9/14/2017": { "entree": "waffles", "veggie": "cookschoice", "treat": "" },
 		"9/15/2017": { "entree": "specialtypizza", "veggie": "peas", "treat": "" },
 		"9/18/2017": { "entree": "chickennuggets", "veggie": "broccoli", "treat": "" },
 		"9/19/2017": { "entree": "tacobag", "veggie": "corn", "treat": "fruitcrisp" },
-		"9/20/2017": { "entree": "tanotenders|corndogs", "veggie": "greenbeans", "treat": "" },
+		"9/20/2017": { "entree": "tanotenders;corndogs", "veggie": "greenbeans", "treat": "" },
 		"9/21/2017": { "entree": "cheeseconey", "veggie": "cookschoice", "treat": "" },
 		"9/22/2017": { "entree": "specialtypizza", "veggie": "peas", "treat": "" },
 		"9/25/2017": { "entree": "cheeseburger", "veggie": "broccoli", "treat": "" },
 		"9/26/2017": { "entree": "pastaandmeatsauce", "veggie": "corn", "treat": "pudding2" },
-		"9/27/2017": { "entree": "tanotenders|hotdog", "veggie": "greenbeans", "treat": "" },
+		"9/27/2017": { "entree": "tanotenders;hotdog", "veggie": "greenbeans", "treat": "" },
 		"9/28/2017": { "entree": "frenchtoast", "veggie": "cookschoice", "treat": "" },
 		"9/29/2017": { "entree": "specialtypizza", "veggie": "peas", "treat": "" }
 	}

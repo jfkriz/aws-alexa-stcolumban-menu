@@ -21,7 +21,7 @@ public class JsonMenuReaderTest {
 	@Test
 	public void testGetMenuForDate() {
 		Calendar c = Calendar.getInstance();
-		c.set(2017, 1, 14);
+		c.set(2017, 7, 30);
 		DailyMenu menu = fixture.getMenuForDate(c.getTime());
 		System.out.println(menu);
 	}
