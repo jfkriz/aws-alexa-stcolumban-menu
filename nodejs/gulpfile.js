@@ -12,21 +12,19 @@ gulp.task('lint', gulp_base.lint);
 
 gulp.task('default', ['test', 'lint']);0
 
-gulp.task('clean-dist', function() {
-    return rimraf('dist');
+gulp.task('-clean-dist', function(cb) {
+    rimraf('{dist,SaintColumbanV2.zip}', cb);
 });
 
-gulp.task('copy-dist', function() {
-    return gulp.src(['index.js', 'package.json', 'lib/**/**']).pipe(gulp.dest('dist'));
+gulp.task('-copy-dist', ['-clean-dist'], function() {
+    return gulp.src(['index.js', 'package.json', 'lib/**/**'], {base: './'}).pipe(gulp.dest('dist'));
 });
 
-gulp.task('prep-dist', function() {
-    return shell('npm i --prod', {cwd: './dist'});
-});
+gulp.task('-prep-dist', ['-copy-dist'], shell.task('npm i --prod', {cwd: './dist', verbose: true}));
 
-gulp.task('dist', ['clean-dist', 'copy-dist', 'prep-dist'], function() {
+gulp.task('dist', ['-prep-dist'], function() {
     return gulp.src('dist/**/**', { base:'dist' })
         .pipe(zip('SaintColumbanv2.zip', {}))
-        //.pipe(aws_lambda('SaintColumbanV2', {}))
+        .pipe(aws_lambda('SaintColumbanV2', {}))
         .pipe(gulp.dest('.'));
 });

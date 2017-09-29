@@ -6,7 +6,7 @@ const fixture = require('../../../lib/skills/bibleVerse/handlers').GetDailyBible
 
 describe('GetDailyBibleVerseIntent', () => {
     beforeEach(() => {
-        process.env.DailyBibleVerseUrl = 'https://www.biblegateway.com/votd/get/?format=json&version=NIV';
+        process.env.DailyBibleVerseUrl = 'http://www.biblegateway.com/votd/get/?format=json&version=NIV';
     })
 
     it('should get today\'s bible verse', () => {

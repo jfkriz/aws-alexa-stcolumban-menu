@@ -15,11 +15,11 @@ class HttpRequest {
         this.port = obj.port || (obj.protocol === HTTPS_PROTOCOL ? 443 : 80);
         this.host = obj.host;
         this.method = method;
-        this.headers = {};
+        this._headers = {};
     }
 
     headers(obj) {
-        this.headers = obj;
+        this._headers = obj;
         return this;
     }
 
@@ -36,11 +36,12 @@ class HttpRequest {
                 host : this.host,
                 port : this.port,
                 method : this.method,
-                headers : this.headers
+                headers : this._headers
             };
 
             const protocol = this.protocol === HTTPS_PROTOCOL ? https : http;
             console.log(`Protocol: ${protocol}`);
+            console.log(`Options: ${JSON.stringify(options)}`);
             protocol.request(options, (response) => {
                 const chunks = [];
                 response.on('data', (chunk) => {
