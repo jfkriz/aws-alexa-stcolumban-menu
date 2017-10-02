@@ -1,0 +1,13 @@
+tr.item-id {
+    width: 15%;
+    text-align: left;
+}
+
+tr.item-description {
+    width: 45%;
+    text-align: left;
+}
+
+tr.item-action {
+    text-align: left;
+}
