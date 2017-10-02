@@ -1,16 +1,16 @@
 'use strict';
 
-const gulp = require('gulp');
-const mocha = require('gulp-mocha');
-const jshint = require('gulp-jshint');
+var gulp = require('gulp');
+var mocha = require('gulp-mocha');
+var jshint = require('gulp-jshint');
 
 module.exports = {
-    lint : () => {
+    lint : function() {
         return gulp.src(['lib/**/*.js', 'test/**/*.js'])
                .pipe(jshint())
                .pipe(jshint.reporter('default'));
     },
-    test : () => {
+    test : function() {
         return gulp.src('test/**/*.spec.js', { read : false })
             .pipe(mocha({ reporter : 'nyan' }));
     }
