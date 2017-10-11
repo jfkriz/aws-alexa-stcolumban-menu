@@ -43,7 +43,7 @@ var skill = {
         var menuDateString = moment(menuDate).format("dddd, MMMM Do");
         var menuDateKey = moment(menuDate).format('M/D/YYYY');
         
-        var menuEntry = this.menu.dates[menuDateKey];
+        var menuEntry = this.menu.dates.find(d => d.date === menuDateKey);
 
         if(!menuEntry) {
             return String.format(this.output.noMenuFound, menuDateString);
