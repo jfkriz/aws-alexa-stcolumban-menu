@@ -25,7 +25,7 @@ var handlers = {
         
         if (daysLeft >= 0) {
             var todayFactor = today.hour() > 15 ? 1 : 0;
-            daysLeft += todayFactor;
+            daysLeft -= todayFactor;
         }
 
         var responseText;
