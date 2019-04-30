@@ -51,7 +51,7 @@ var skill = {
         
         var entrees = _.escape(_.map(menuEntry.entree.split(';'), (entree) => { return _.find(this.menu.entrees, ['id', entree]).description; }).join(' or '));
         var veggie = _.escape(_.find(this.menu.veggies, ['id', menuEntry.veggie]).description);
-        var treat = _.trim(menuEntry.treat).length > 0 ? _.escape(_.find(this.menu.treat, ['id', menuEntry.treat]).description) : undefined;
+        var treat = _.trim(menuEntry.treat).length > 0 ? _.escape(_.find(this.menu.treats, ['id', menuEntry.treat]).description) : undefined;
 
         var randomQuote = _.escape(this.output.randomQuotes[_.random(0, this.output.randomQuotes.length - 1)]);
         if(treat) {

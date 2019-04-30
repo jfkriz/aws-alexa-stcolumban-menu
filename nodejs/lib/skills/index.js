@@ -2,5 +2,6 @@
 
 module.exports = {
     BibleVerse: require('./bibleVerse'),
-    DailyMenu: require('./dailyMenu')
+    DailyMenu: require('./dailyMenu'),
+    DaysLeft: require('./daysLeft')
 };
