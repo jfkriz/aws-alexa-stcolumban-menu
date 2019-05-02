@@ -30,13 +30,13 @@ var handlers = {
 
         var responseText;
         if (daysLeft == 1) {
-            responseText = 'Only one more day of school! Make it great!';
+            responseText = '<voice name="Amy">Only one more day of school! Make it great!</voice>';
         } else if (daysLeft == 7) {
-            responseText = 'Lucky number seven - that\'s how many days you have left!';
+            responseText = '<voice name="Nicole">Lucky number seven - that\'s how many days you have left!</voice>';
         } else if (daysLeft == 10) {
-            responseText = 'Ten days to go - you can do it!'
+            responseText = '<voice name="Raveena">Ten days to go - you can do it!</voice>'
         } else if (daysLeft > 0) {
-            responseText = `You only have ${daysLeft} days of school left. Just keep learning, just keep learning, just keep learning, learning, learning!`;
+            responseText = `You only have ${daysLeft} days of school left. <prosody rate="fast" pitch="high">Just keep learning, just keep learning, just keep learning, learning, learning! La la la la la la!</prosody>`;
         } else {
             responseText = 'School\'s out, hooray! I love Summer! Don\'t you?';
         }
